@@ -1,0 +1,389 @@
+body{
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+    
+}
+header{
+    height: 60px;
+    background-color: inherit;       
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 2;
+    box-shadow: 15px 5px 5px 5px #00000050;
+}
+.container{
+    background-image: url('../images/17.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    width: 100vw;
+}
+footer{
+    height: 60px;
+    width: 100%;
+    box-sizing: border-box;
+    display: table;
+    margin-top: 2rem;
+    background-color: rgb(76, 76, 76);
+}
+
+.conteneurFooter{
+    display: flex;
+    height: fit-content;
+}
+
+.btn{
+    padding: 1.5rem;
+    border-radius: 1rem;
+    margin-top: 1rem;
+    border: 2px ;
+    cursor: pointer;
+    font-size: 1.25rem;
+}
+
+.div-img {
+    width: 20%;
+    height: fit-content;
+}
+
+.div-img > img{
+    width: 100%;
+    height: 300px;
+    display: inline-block;
+    margin: 1rem 0 0 2rem;
+}
+
+.div-infoCadre{
+    display: inline-block;
+    background-color: inherit;
+    width: 80%;
+    height: 200px;
+    margin: 1rem 0 0 1rem;
+    padding: 1rem;
+    color: rgb(235, 232, 232);
+}
+
+.div-info{
+    /*border: 2px solid blue;*/
+    font-size: 1.5em;
+    text-align: left;
+    /*padding: 1rem 0 0 1rem;*/
+    text-align: center;
+    margin-top: 40px; 
+   
+}
+
+
+.Expertise, .Projets{
+    background-color: antiquewhite;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    margin: 4rem 5rem 0 5rem;
+    padding: 3rem;
+    border-radius: 1rem;
+}
+.exper-interne{
+    box-shadow: 0 7px 7px rgb(248, 6, 6);
+    margin: 0.25rem;
+
+}
+#Contact{
+    text-align: center;
+    margin-bottom: 100px;
+   
+}
+#Contact h3{
+    width: 400px;
+    text-transform: uppercase;
+    margin-bottom: 20px;
+    font-size: 35px;
+    color: #444;
+    border-bottom: 1.5px solid #02b8dd; padding-bottom: 5px;
+    margin-left: 350px;
+    
+}
+#Contact .info{
+    font-weight: bold ; 
+    font-weight: bold ;
+    color: rgb(101, 167, 232);
+    font-size:35px;
+}
+
+.div-info {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 30px;
+}
+
+.div-info input{
+    width: 100%;
+    height: 2rem;
+    background-color: rgb(132, 119, 214);
+    font-weight: bold;
+    font-weight: bold;
+    color: white;
+}
+
+.envoifichier{
+    margin: 1rem 1rem;
+   
+}
+
+.text-white{
+    color: rgb(250, 250, 250);
+}
+.avatar {
+    height: 55px;
+    max-height: 55px;
+    max-width: 55px;
+}
+.avatar img {
+    height: 100%;
+    width: 100%;
+}
+.rounded-circle {
+    border-radius: 50%;
+    
+}
+.flex-row  {
+    display: flex;
+}
+.flex-row  a{
+    color: white;
+    text-decoration: none;
+}
+.flex-grow{
+    flex-grow: 1;
+}
+.flex-col{
+    display: flex;
+    flex-direction: column;
+}
+.align-center{
+    align-items: center;
+}
+.center{
+    justify-content: center;
+}
+.space-around{
+    justify-content: space-around;
+}
+.space-between{
+    justify-content: space-between;
+}
+.mx-md{
+    margin: 0 1em;
+}
+li{
+    list-style: none;
+    cursor: pointer;
+}
+.login{
+    max-height: 40px;
+    max-width: 40px;
+    height: 40px;
+    width: 40px;
+
+}
+.px-md{
+    padding: 0 1em;
+}
+h1{
+    font-size: 3em;
+    margin: 0;
+}
+.tag-line{
+    width: 80%;
+    background-color: #00000050;
+}
+.text-center{
+    text-align: center;
+}
+.menu{
+    position: relative;
+}
+.menu-container{
+    position: absolute;
+    left: -100%;
+    top: 20px;
+    height: 0;
+    width: 200px;
+    visibility: hidden;
+    background-color: white;
+    transition: height .5s;
+}
+
+li:hover .menu-container{
+    visibility: visible;
+    transition: height .5s;
+    height: 200px;
+    width: 200px;
+    overflow: hidden;
+}
+.wh-100{
+    width: 100%;
+    height: 100%;
+    background-color: white;
+}
+.p-md{
+    padding: 1em;
+}
+.menu-item{
+    width: 100%;
+    padding: .5em;
+    border-bottom: 1px solid #00000020;
+}
+.menu-item:hover{
+    background-color: #00000080;
+    
+}
+.menu-item a:hover{
+    color: white;
+}
+.menu-item a{
+    text-decoration: none;
+    color: #00000080;
+    font-size: 16px;
+}
+ul {
+    padding: 0;
+}
+.login, .nav-menu{
+    max-height: 40px;
+    max-width: 40px;
+    height: 40px;
+    width: 40px;
+    background-color: blue;
+}
+.menu-item{
+    width: 100%;
+    padding: .5em;
+    border-bottom: 1px solid #00000020;
+}
+.menu-item:hover{
+    background-color: #00000080;
+    
+}
+.menu-item a:hover{
+    color: white;
+}
+.menu-item a{
+    text-decoration: none;
+    color: #00000080;
+    font-size: 16px;
+}
+.nav-menu{
+    display: none;
+}
+
+.nav-bar {
+    max-height: 40px;
+    max-width: 40px;
+    height: 40px;
+    width: 40px;
+    background-color: blue;
+    display: none;
+}
+
+.copyright {
+    height: 10vh;
+    width: 100%;
+    background-color: #1e1e1e;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 20px;
+    color: white;
+}
+
+@media screen and (max-width: 680px) {
+    p {
+        color: steelblue; 
+        background-color: black;
+        font-size: 1.2em;
+    }
+    .Expertise{
+        background-color: steelblue;
+        color: white;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+    
+    }
+    .Projets{
+        background-color: steelblue;
+        color: white;
+        width: 50%;
+        height: 100%;
+        display: flex;
+        flex-direction: column;
+
+    }
+
+    .conteneurFooter{
+        display: flex;
+        flex-direction: column;
+
+    }
+    .div-img{
+        margin: 1rem 0 0 2rem;
+        width: 50%;
+    }
+
+    .lien {
+        display: none;
+    }
+
+    .login {
+        display: none;
+    }
+
+    .nav-bar {
+        display: flex;
+    }
+
+    .nav-bar:hover > .lien {
+        display: flex;
+        position: relative;
+        top: 40px;
+        right: 30px;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        font-weight: 600;
+    }
+
+    .text-milieu{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    } 
+    .padding-header{
+        padding-bottom: 2rem;
+    }
+
+    .aceuil {
+        margin-top: 1.5rem;
+      
+    }
+    #file{
+        margin: 1rem 1rem;
+    }
+    #envoie{
+       
+        width: 100px;
+        padding-bottom: 3rem;
+        margin:auto 100px;
+       
+    }
+}
+
