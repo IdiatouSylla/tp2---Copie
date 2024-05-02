@@ -15,11 +15,21 @@ header{
     box-shadow: 15px 5px 5px 5px #00000050;
 }
 .container{
-    background-image: url('../images/17.jpg');
+    background-image: url('../C1.jpg'); 
     background-repeat: no-repeat;
     background-size: cover;
     height: 100vh;
     width: 100vw;
+}
+#expertise h1{
+    text-align: center;
+    margin-top: 35px;
+    text-decoration:underline;
+}
+#projet h1{
+    text-align: center;
+    margin-top: 35px;
+    text-decoration:underline;
 }
 footer{
     height: 60px;
@@ -44,39 +54,53 @@ footer{
     font-size: 1.25rem;
 }
 
-.div-img {
-    width: 20%;
-    height: fit-content;
-}
-
-.div-img > img{
-    width: 100%;
-    height: 300px;
-    display: inline-block;
-    margin: 1rem 0 0 2rem;
-}
-
-.div-infoCadre{
-    display: inline-block;
-    background-color: inherit;
-    width: 80%;
-    height: 200px;
-    margin: 1rem 0 0 1rem;
-    padding: 1rem;
-    color: rgb(235, 232, 232);
-}
-
-.div-info{
-    /*border: 2px solid blue;*/
-    font-size: 1.5em;
-    text-align: left;
-    /*padding: 1rem 0 0 1rem;*/
+footer {
+    background-color: #333;
+    color: #fff;
+    padding: 30px 0;
     text-align: center;
-    margin-top: 40px; 
-   
 }
 
+#footer p {
+    margin: 0;
+    font-size: 16px;
+}
 
+#footer a {
+    color: #fff;
+    text-decoration: none;
+}
+
+.conteneurFooter {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}
+
+.div-img {
+    flex: 0 0 auto; /* empêche le redimensionnement des images */
+    margin-bottom: 20px;
+}
+
+.div-img > img {
+    width: 100%;
+    max-width: 200px;
+    height: auto;
+}
+
+.div-infoCadre {
+    flex: 1 1 300px; /* permet au cadre d'information de se redimensionner */
+    background-color: #555;
+    color: #fff;
+    padding: 1rem;
+    margin-bottom: 20px;
+    box-sizing: border-box;
+}
+
+.div-info {
+    font-size: 16px;
+    text-align: center;
+}
 .Expertise, .Projets{
     background-color: antiquewhite;
     display: flex;
@@ -92,26 +116,34 @@ footer{
     margin: 0.25rem;
 
 }
-#Contact{
+.exper-interne h2 img {
+    max-width: 100%; 
+    height: auto; 
+    display: block; 
+    margin: auto; /
+}
+#Contact {
     text-align: center;
-    margin-bottom: 100px;
-   
+    margin-bottom: 5vh; 
 }
-#Contact h3{
-    width: 400px;
+
+#Contact h3 {
+    width: 80%; 
+    max-width: 400px; 
     text-transform: uppercase;
-    margin-bottom: 20px;
-    font-size: 35px;
+    margin-bottom: 3vh; 
+    font-size: 3.5vw; 
     color: #444;
-    border-bottom: 1.5px solid #02b8dd; padding-bottom: 5px;
-    margin-left: 350px;
-    
+    border-bottom: 1.5px solid #02b8dd;
+    padding-bottom: 2vh; 
+    margin-left: auto;
+    margin-right: auto; 
 }
-#Contact .info{
-    font-weight: bold ; 
-    font-weight: bold ;
+
+#Contact .info {
+    font-weight: bold;
     color: rgb(101, 167, 232);
-    font-size:35px;
+    font-size: 3vw; 
 }
 
 .div-info {
@@ -303,7 +335,15 @@ ul {
     color: white;
 }
 
-@media screen and (max-width: 680px) {
+@media screen and (max-width: 768px) {
+    /* Styles pour les écrans de petite taille */
+    .Expertise, .Projets {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        marin: 2rem 0;
+    }
+    
     p {
         color: steelblue; 
         background-color: black;
@@ -326,16 +366,6 @@ ul {
         display: flex;
         flex-direction: column;
 
-    }
-
-    .conteneurFooter{
-        display: flex;
-        flex-direction: column;
-
-    }
-    .div-img{
-        margin: 1rem 0 0 2rem;
-        width: 50%;
     }
 
     .lien {
@@ -383,7 +413,40 @@ ul {
         width: 100px;
         padding-bottom: 3rem;
         margin:auto 100px;
-       
+    }
+}
+@media screen and (max-width: 768px) {
+    #Contact h3 {
+        font-size: 6vw;
+    }
+
+    #Contact .info {
+        font-size: 5vw;
     }
 }
 
+@media screen and (max-width: 480px) {
+    #Contact h3 {
+        font-size: 8vw;
+    }
+
+    #Contact .info {
+        font-size: 7vw;
+    }
+    
+}
+@media screen and (max-width: 768px) {
+    .div-infoCadre {
+        flex-basis: 100%; /* Permet à chaque élément d'occuper toute la largeur */
+    }
+
+    .div-img {
+        margin: 0 auto 20px auto;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .div-img > img {
+        max-width: 150px;
+    }
+}
